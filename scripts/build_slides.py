@@ -9,6 +9,7 @@ reached, a small built-in fallback still shows one slide at a time with arrow ke
 
 from __future__ import annotations
 
+import argparse
 import base64
 import html
 import json
@@ -34,7 +35,7 @@ def usd(x, d=5):
     return f"${x:,.{d}f}"
 
 
-def build():
+def build(repo_url: str):
     meas, bench_a, bench_b, rows_a, sec, ie, participants = load()
     tests = subprocess.run([sys.executable, "-m", "unittest"], cwd=ROOT, capture_output=True, text=True)
     out = tests.stderr + tests.stdout
@@ -63,7 +64,7 @@ def build():
              for sc in ("tough-feedback", "salary-negotiation", "upset-client")]
 
     v = dict(
-        REVEAL=REVEAL, CSS=CSS, FALLBACK=FALLBACK, ARCH=ARCH,
+        REVEAL=REVEAL, CSS=CSS, FALLBACK=FALLBACK, ARCH=ARCH, repo=e(repo_url),
         cost=usd(S["cost_usd"]["mean"]), runs=S["runs"], n_in=f"{S['input_tokens']['mean']:,.0f}",
         cache_pct=round(100 * S["cached_input_tokens"]["mean"] / S["input_tokens"]["mean"]),
         n_out=f"{S['output_tokens']['mean']:,.0f}", reqs=f"{S['requests']['mean']:.1f}",
@@ -143,6 +144,8 @@ table.mini td,table.mini th{padding:8px 10px;border-bottom:1px solid var(--peri3
 table.mini th{font-size:15px;text-transform:uppercase;letter-spacing:.06em;color:var(--mute)}
 table.mini td.r,table.mini th.r{text-align:right}
 .arch text{font-family:Inter,-apple-system,sans-serif}
+.repo{font-size:22px;color:var(--navy2);margin-top:14px}
+.repo a{color:var(--blue);font-weight:700}
 .reveal .slide-number{background:transparent;color:var(--mute);font-size:16px}
 .reveal .progress{color:var(--blue)}
 .reveal .controls{color:var(--blue)}
@@ -219,6 +222,7 @@ TEMPLATE = """<!doctype html>
    <h1>SkillSim Lite</h1>
    <p class="lede">Practice the conversations nobody teaches you how to have.</p>
    <p class="small">Alice Liang · AI Foundations · Final Project</p>
+   <p class="repo">Code: <a href="{repo}">{repo}</a></p>
   </div>
   {img_landing}
  </div>
@@ -372,6 +376,7 @@ TEMPLATE = """<!doctype html>
   </div>
  </div>
  <p class="lede" style="margin-top:24px;font-size:28px">The goal: <b>the conversations nobody teaches</b>, decoded honestly and practiced until they feel familiar.</p>
+ <p class="repo">Clone and run it: <a href="{repo}">{repo}</a> (setup steps in the README)</p>
 </section>
 
 </div></div>
@@ -382,7 +387,9 @@ TEMPLATE = """<!doctype html>
 
 
 def main_cli():
-    text = build()
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--repo-url", required=True, help="the GitHub repository graders will clone")
+    text = build(ap.parse_args().repo_url)
     (ROOT / "slides.html").write_text(text)
     print(f"Wrote slides.html ({len(text) / 1e6:.2f} MB, {text.count('<section')} slides)")
 

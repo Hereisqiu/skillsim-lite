@@ -146,7 +146,7 @@ Evidence: `exports/security_evidence.md` (live attacks against the real model) a
 
 ```bash
 python -m scripts.build_report --repo-url https://github.com/<owner>/<repo>
-python -m scripts.build_slides
+python -m scripts.build_slides --repo-url https://github.com/<owner>/<repo>
 ```
 
 Both run the test suite first, compute every number from the logs and exports, and embed screenshots from `report_assets/`. The report builder also reads the local session and request logs, which are git-ignored, so it rebuilds only on the machine that produced them.
