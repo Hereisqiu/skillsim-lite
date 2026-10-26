@@ -1,0 +1,15 @@
+{
+  "_doc": "The single source of model prices for SkillSim. Costs are computed only for models listed here; any other model's cost is reported as unavailable. Edit this file, not the code, when prices change.",
+  "units": "USD per 1,000,000 tokens",
+  "models": {
+    "gpt-6-luna": {
+      "input": 0.10,
+      "cached_input": null,
+      "output": 0.50,
+      "source": "AI Foundations course starter code: Lectures/Lecture 11/mult_agent_hp_tokenomics/backend/agents/pricing.py (PRICES['gpt-6-luna'])",
+      "as_of": "2026-10-06",
+      "verified": "Course-provided figures. Not cross-checked against a provider price page or a Portkey invoice.",
+      "cached_input_note": "No cached-input rate is published in the source, so cached tokens are billed at the full input rate. Reported costs are therefore an upper bound, and caching shows no cost saving here even when it saves real money."
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "feedback-sbi": {
+    "title": "Situation-Behavior-Impact feedback",
+    "points": [
+      "Describe the specific situation (when and where), the observable behavior, and its impact.",
+      "Stick to facts the other person would agree happened; avoid labels like 'unreliable'.",
+      "After stating the impact, pause and invite their view before proposing solutions."
+    ]
+  },
+  "open-questions": {
+    "title": "Open questions and active listening",
+    "points": [
+      "Open questions start with what, how, or walk me through; they can't be answered yes or no.",
+      "Reflect back what you heard in your own words before moving on.",
+      "Follow-up questions that reuse the other person's words show you listened."
+    ]
+  },
+  "commitments": {
+    "title": "Closing with clear commitments",
+    "points": [
+      "A good close names the action, the owner, and the date.",
+      "Ask the other person to restate the agreement, or restate it yourself and confirm.",
+      "Offer a check-in point so the commitment has a natural follow-up."
+    ]
+  },
+  "negotiation-anchoring": {
+    "title": "Anchoring a counteroffer",
+    "points": [
+      "Lead with enthusiasm for the role, then make a specific numeric ask.",
+      "Back the number with one or two reasons: market data, competing offers, or scope.",
+      "After stating the number, stop talking and let the other side respond."
+    ]
+  },
+  "negotiation-levers": {
+    "title": "Negotiating beyond base salary",
+    "points": [
+      "If base is constrained, ask what flexibility exists elsewhere.",
+      "Common levers: signing bonus, an early compensation review, start date, or development budget.",
+      "Get any agreed terms confirmed in writing."
+    ]
+  },
+  "deescalation": {
+    "title": "De-escalating an upset stakeholder",
+    "points": [
+      "Let them finish; interrupting increases frustration.",
+      "Name the emotion and the impact before explaining causes.",
+      "Keep explanations short and non-technical, then pivot to the plan."
+    ]
+  },
+  "apology-ownership": {
+    "title": "Apologizing with ownership",
+    "points": [
+      "Apologize for the specific impact, not 'any inconvenience'.",
+      "Avoid shifting blame to other teams, vendors, or the client.",
+      "Pair the apology with what is changing so it doesn't happen again."
+    ]
+  }
+}

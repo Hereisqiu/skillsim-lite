@@ -1,0 +1,93 @@
+{
+  "about": "Curated by SkillSim for practice. These notes describe common usage in many US/English-speaking offices; they are not universal, not externally verified, and norms vary by organization, industry, region, and culture.",
+  "general": {
+    "norms_vary": "Directness, formality, and how disagreement is expressed differ across workplaces and cultures. A softer or more direct style is not automatically better; what matters is that the message is understood and the relationship holds.",
+    "power_and_silence": "People with less positional power often avoid raising problems with someone who controls their review, pay, or contract. Silence does not necessarily mean agreement or lack of concern.",
+    "asking_is_normal": "Asking what a term means or what someone expects is common and usually seen as careful rather than uninformed."
+  },
+  "scenarios": {
+    "tough-feedback": {
+      "phrases": {
+        "one-on-one": "A recurring private meeting between a manager and a direct report. It can be used for status updates, support, career talk, or feedback; the purpose varies by team.",
+        "sprint": "A fixed work period (often 1–2 weeks) in agile teams. A 'missed sprint deadline' usually means planned work wasn't finished by the end of that period.",
+        "blocked": "Someone can't continue their work until another task is done. 'Engineering is blocked' means engineers are waiting on this work.",
+        "handoff": "The point where one person's finished work passes to the next person, for example designs going to engineers.",
+        "it's been a lot": "Often a soft signal of overload or stress. It can invite a follow-up question; it may also be a way of avoiding details.",
+        "on my plate": "The set of tasks someone is responsible for right now.",
+        "bandwidth": "Informal for available time or capacity.",
+        "performance review": "A formal evaluation, often tied to promotions or raises. Mentioning it can be heard as a warning, even if not intended."
+      },
+      "dynamics": [
+        "The team lead controls Jordan's priorities and has influence on their review, so Jordan may be cautious about admitting problems.",
+        "A request from a more senior person outside the team (such as a VP) can feel hard to refuse, even if it isn't in the plan.",
+        "Jordan is relatively new (eight months), which can make someone more worried about looking less capable."
+      ],
+      "uncertainties": [
+        "Why the deadlines were missed is not known at the start; it could be workload, unclear requirements, personal factors, or something else.",
+        "Whether Jordan knows how much the delays affect engineering is unclear.",
+        "It's unclear whether anyone else, such as another leader, has asked Jordan for work."
+      ],
+      "questions": [
+        "What's been taking up your time over the last few sprints?",
+        "Is there anything on your plate I might not know about?",
+        "What would make Thursday's handoff realistic for you?",
+        "How would you like us to flag risks earlier next time?"
+      ]
+    },
+    "salary-negotiation": {
+      "phrases": {
+        "base": "The fixed annual salary, separate from bonuses, equity, or benefits.",
+        "band": "The salary range a company has approved for a role or level. Recruiters often can't go above it without extra approval.",
+        "internal equity": "Keeping pay consistent among people in similar roles. It can be a real constraint or a negotiating position; often both.",
+        "signing bonus": "A one-time payment for accepting an offer. Companies sometimes use it when base salary is harder to change.",
+        "verbal yes": "An informal acceptance before signing the written offer. Many people consider it a commitment, so it's worth being sure of the terms first.",
+        "comp review": "A scheduled review of compensation, sometimes earlier than the normal annual cycle if negotiated.",
+        "let me see what I can do": "Often signals some flexibility exists, but not how much. It may also be a polite way to end the topic.",
+        "competing offer": "Another company's offer or late-stage interview. Mentioning it can add leverage; overstating it can damage trust."
+      },
+      "dynamics": [
+        "The recruiter holds the offer, but the company has spent months looking, which gives the candidate some leverage.",
+        "Recruiters usually represent the company's budget and may also genuinely want the candidate to accept.",
+        "Candidates from backgrounds where negotiating is less common may feel it is rude; in many companies, a polite counteroffer is expected."
+      ],
+      "uncertainties": [
+        "The exact top of the salary band is not known to the candidate.",
+        "Whether other parts of the package (bonus, review timing, start date) are flexible is not known until asked.",
+        "How firm the decision deadline is may be unclear."
+      ],
+      "questions": [
+        "Is there flexibility on base salary for this role?",
+        "Beyond base, which parts of the package can be adjusted?",
+        "Could you share the range approved for this level?",
+        "When do you need a decision, and could the terms be confirmed in writing first?"
+      ]
+    },
+    "upset-client": {
+      "phrases": {
+        "go live": "The moment a product or system becomes available to real users.",
+        "integration bug": "An error where two systems that need to work together (here, the portal and the scheduling system) don't connect properly.",
+        "accountability": "Here, usually a request for someone to clearly own what went wrong and what happens next, not necessarily a demand for blame or punishment.",
+        "in writing": "A documented summary, often so the client can share it with their own leadership. It can also signal reduced trust.",
+        "escalate": "To raise an issue to more senior people. A client mentioning escalation may be signaling pressure from their side.",
+        "renewal": "When the client decides whether to continue the contract. Upcoming renewals raise the stakes of every interaction.",
+        "credit": "A discount or refund offered to make up for a problem. Clients may or may not expect one."
+      },
+      "dynamics": [
+        "The client director is accountable to their own CEO, so part of their frustration may be about how this looks internally.",
+        "The contract renewal gives the client real leverage over the vendor.",
+        "The account manager speaks for a team whose mistake caused the delay, which can make people defensive or overly apologetic."
+      ],
+      "uncertainties": [
+        "Whether the client wants compensation, reassurance, or mainly a credible plan is not clear at first.",
+        "How much detail about the technical cause the client actually wants is unknown.",
+        "Whether the new date is fully certain depends on the fix being verified."
+      ],
+      "questions": [
+        "What would be most helpful for you to share with your leadership today?",
+        "How much technical detail would be useful for you?",
+        "Who on your side should be on the follow-up updates?",
+        "What would make the new date feel credible to you?"
+      ]
+    }
+  }
+}
